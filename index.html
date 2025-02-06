@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Tu Tienda de Tecnología</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="nav__logo">
+                <i class="fas fa-laptop"></i>
+                TechStore
+            </a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Productos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#categories" class="nav__link">Categorías</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <div class="nav__search">
+                    <input type="text" placeholder="Buscar productos..." class="nav__search-input">
+                    <i class="fas fa-search nav__search-icon"></i>
+                </div>
+
+                <div class="nav__cart">
+                    <i class="fas fa-shopping-cart nav__cart-icon"></i>
+                    <span class="nav__cart-count">0</span>
+                </div>
+
+                <div class="nav__user">
+                    <i class="fas fa-user nav__user-icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Descubre la Mejor Tecnología</h1>
+                    <p class="hero__description">
+                        Encuentra los últimos gadgets y dispositivos tecnológicos al mejor precio.
+                    </p>
+                    <a href="#products" class="button">Ver Productos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories section" id="categories">
+            <div class="categories__container container">
+                <h2 class="section__title">Categorías Populares</h2>
+                <div class="categories__grid">
+                    <!-- Las categorías se cargarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products section" id="products">
+            <div class="products__container container">
+                <h2 class="section__title">Nuestros Productos</h2>
+                
+                <div class="products__filters">
+                    <button class="filter__button active" data-filter="all">Todos</button>
+                    <button class="filter__button" data-filter="laptops">Laptops</button>
+                    <button class="filter__button" data-filter="smartphones">Smartphones</button>
+                    <button class="filter__button" data-filter="accessories">Accesorios</button>
+                </div>
+
+                <div class="products__grid">
+                    <!-- Los productos se cargarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal__content">
+            <div class="cart-modal__header">
+                <h3>Tu Carrito</h3>
+                <button class="cart-modal__close">&times;</button>
+            </div>
+            <div class="cart-modal__items">
+                <!-- Los items del carrito se cargarán dinámicamente -->
+            </div>
+            <div class="cart-modal__footer">
+                <div class="cart-modal__total">
+                    <span>Total:</span>
+                    <span class="cart-modal__total-amount">$0.00</span>
+                </div>
+                <button class="button button--primary">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">TechStore</h3>
+                    <p class="footer__description">
+                        Tu tienda de confianza para productos tecnológicos de alta calidad.
+                    </p>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Enlaces</h3>
+                    <ul class="footer__links">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#products">Productos</a></li>
+                        <li><a href="#categories">Categorías</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Contacto</h3>
+                    <ul class="footer__contact">
+                        <li><i class="fas fa-phone"></i> +34 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@techstore.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Madrid, España</li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Redes Sociales</h3>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 TechStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
